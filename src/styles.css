@@ -84,12 +84,59 @@ section h3 {
   text-align: left;
   letter-spacing: 0;
 }
+section h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: 0;
+}
+
 section p {
   text-align: left;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   opacity: 50%;
+}
+.communities {
+  background-color: #181525;
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background-color: #272435;
+  margin-top: 30px;
+}
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card-body {
+  padding: 0 40px;
+}
+.card-footer {
+  padding: 50px;
+}
+.btn {
+  background-color: #462cb2;
+  color: white;
+  padding: 16px 84px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .gallery {
   padding: 100px;
