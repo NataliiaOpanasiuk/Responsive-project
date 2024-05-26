@@ -157,7 +157,7 @@ section p {
 }
 .gallery img {
   max-width: 390px;
-  filter: grayscale(80%);
+  filter: contrast(90%);
   transition: all 150ms ease-in-out;
 }
 .gallery img:hover {
@@ -304,13 +304,8 @@ footer a {
   }
   .gallery img {
     max-width: 90%;
-    filter: grayscale(50%);
-    transition: all 150ms ease-in-out;
   }
-  .gallery img:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
-  }
+
   .grid-3-column-1-narrow {
     padding: 35px;
     grid-gap: 25px;
