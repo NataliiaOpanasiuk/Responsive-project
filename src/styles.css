@@ -161,7 +161,7 @@ section p {
   transition: all 150ms ease-in-out;
 }
 .gallery img:hover {
-  filter: grayscale(0);
+  filter: contrast(100%);
   transform: scale(1.1);
 }
 .text-center {
@@ -304,6 +304,11 @@ footer a {
   }
   .gallery img {
     max-width: 90%;
+    filter: contrast(100%);
+  }
+
+  .gallery img:hover {
+    transform: scale(1);
   }
 
   .grid-3-column-1-narrow {
