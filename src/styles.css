@@ -50,7 +50,6 @@ h3 {
 }
 section {
   background-color: #0d0c15;
-  /* background-color: #181525; */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -66,7 +65,6 @@ section {
   grid-gap: 64px;
 }
 .school-image {
-  /* max-width: 570px; */
   width: 100%;
 }
 section h2 {
@@ -92,7 +90,6 @@ section h4 {
   text-align: left;
   letter-spacing: 0;
 }
-
 section p {
   text-align: left;
   font-weight: 400;
@@ -144,11 +141,11 @@ section p {
   font-size: 12px;
   line-height: 1.5;
 }
+
 .gallery {
   padding: 100px;
   max-width: 1200px;
 }
-
 .scroll-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -212,6 +209,7 @@ footer a {
   margin: 0;
   padding: 0;
 }
+
 @media (max-width: 900px) {
   header {
     padding: 100px 0;
@@ -245,7 +243,6 @@ footer a {
   .communities {
     padding: 35px;
   }
-
   section h2 {
     font-size: 10px;
     text-align: center;
@@ -263,14 +260,12 @@ footer a {
     text-align: justify;
   }
   .card-header {
-    /* padding-top: 20px; */
     grid-template-columns: 1fr;
   }
   .card img {
     display: none;
   }
   .embed {
-    /* width: 100%; */
     max-width: 570px;
     aspect-ratio: 21/9;
     margin: 0 auto;
@@ -286,31 +281,22 @@ footer a {
     padding: 16px 18px;
     font-size: 10px;
   }
-  /* .btn {
-    padding: 16px 28px;
-    font-size: 12px;
-  } */
   .gallery {
     padding: 35px;
   }
-
   .scroll-gallery {
     display: flex;
     grid-gap: 10px;
     overflow-x: scroll;
     max-width: 800px;
-    /* margin-top: 35px; */
-    /* padding: 35px; */
   }
   .gallery img {
     max-width: 90%;
     filter: contrast(100%);
   }
-
   .gallery img:hover {
     transform: scale(1);
   }
-
   .grid-3-column-1-narrow {
     padding: 35px;
     grid-gap: 25px;
@@ -325,11 +311,11 @@ footer a {
   footer ul {
     margin: 0;
   }
-
   footer a {
     font-size: 12px;
   }
 }
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .grid-2-column {
     grid-template-columns: 1fr;
