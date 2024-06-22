@@ -6,17 +6,7 @@ body {
   background-color: #111313;
 }
 
-header {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("../images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 200px 0;
-}
-
+/* headings */
 h1 {
   font-weight: 700;
   font-size: 96px;
@@ -36,6 +26,32 @@ h3 {
   letter-spacing: 5px;
   margin: 0px;
 }
+
+/* sections */
+section {
+  background-color: #0d0c15;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 
+    =======================================================================
+    Header
+    ======================================================================= 
+     */
+
+header {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+/* link */
 .more-link {
   font-weight: 700;
   font-size: 14px;
@@ -48,12 +64,14 @@ h3 {
   display: inline-block;
   margin-top: 32px;
 }
-section {
-  background-color: #0d0c15;
-  max-width: 1400px;
-  margin: 0 auto;
-}
 
+/* 
+    =======================================================================
+    About Port McNeill
+    ======================================================================= 
+     */
+
+/* grid */
 .grid {
   display: grid;
   max-width: 1200px;
@@ -64,9 +82,13 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
 }
+
+/* image */
 .school-image {
   width: 100%;
 }
+
+/* headings & text */
 section h2 {
   font-weight: 700;
   font-size: 16px;
@@ -97,17 +119,28 @@ section p {
   line-height: 1.5;
   opacity: 50%;
 }
+
+/* 
+    =======================================================================
+    Communities section
+    ======================================================================= 
+     */
+
 .communities {
   background-color: #181525;
   padding: 100px;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* communities grid */
 .grid-3-column {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding-top: 0;
 }
+
+/* cards */
 .card {
   background-color: #272435;
   margin-top: 30px;
@@ -142,10 +175,20 @@ section p {
   line-height: 1.5;
 }
 
+/* 
+    =======================================================================
+    Gallery section
+    ======================================================================= 
+     */
 .gallery {
   padding: 100px;
   max-width: 1200px;
 }
+.text-center {
+  text-align: center;
+}
+
+/* scroll galery */
 .scroll-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -161,9 +204,12 @@ section p {
   filter: contrast(100%);
   transform: scale(1.1);
 }
-.text-center {
-  text-align: center;
-}
+
+/* 
+    =======================================================================
+    Footer
+    ======================================================================= 
+     */
 footer {
   background-image: radial-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("../images/footer.jpg");
@@ -187,11 +233,8 @@ footer p {
   opacity: 0.7;
   text-align: justify;
 }
-footer a {
-  color: white;
-  opacity: 0.7;
-}
 
+/* footer grid */
 .grid-3-column-1-narrow {
   max-width: 1200px;
   margin: 0 auto;
@@ -201,6 +244,7 @@ footer a {
   grid-gap: 64px;
 }
 
+/* links */
 .footer-container ul {
   padding: 0;
 }
@@ -209,11 +253,18 @@ footer a {
   margin: 0;
   padding: 0;
 }
+footer a {
+  color: white;
+  opacity: 0.7;
+}
 
+/* 
+    =======================================================================
+    Media queries
+    ======================================================================= 
+     */
 @media (max-width: 900px) {
-  header {
-    padding: 100px 0;
-  }
+  /* grids */
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -225,6 +276,15 @@ footer a {
   .grid-3-column {
     margin-top: 0;
     padding: 0;
+  }
+  .grid-3-column-1-narrow {
+    padding: 35px;
+    grid-gap: 25px;
+  }
+
+  /* ====== Header ===================================== */
+  header {
+    padding: 100px 0;
   }
   h1 {
     font-size: 36px;
@@ -240,9 +300,8 @@ footer a {
     padding: 16px 32px;
     margin-top: 32px;
   }
-  .communities {
-    padding: 35px;
-  }
+
+  /* ====== Sections ===================================== */
   section h2 {
     font-size: 10px;
     text-align: center;
@@ -259,6 +318,13 @@ footer a {
     font-size: 12px;
     text-align: justify;
   }
+
+  /* ====== Communities Section ====== */
+  .communities {
+    padding: 35px;
+  }
+
+  /* cards */
   .card-header {
     grid-template-columns: 1fr;
   }
@@ -281,9 +347,13 @@ footer a {
     padding: 16px 18px;
     font-size: 10px;
   }
+
+  /* ====== Gallery Section ====== */
   .gallery {
     padding: 35px;
   }
+
+  /* scroll gallery */
   .scroll-gallery {
     display: flex;
     grid-gap: 10px;
@@ -297,10 +367,9 @@ footer a {
   .gallery img:hover {
     transform: scale(1);
   }
-  .grid-3-column-1-narrow {
-    padding: 35px;
-    grid-gap: 25px;
-  }
+
+  /* ====== Footer ===================================== */
+
   footer h3 {
     font-size: 14px;
   }
@@ -308,6 +377,8 @@ footer a {
     font-size: 12px;
     margin: 5px;
   }
+
+  /* links */
   footer ul {
     margin: 0;
   }
@@ -316,14 +387,12 @@ footer a {
   }
 }
 
+/* 
+    =======================================================================
+    Media queries - Large
+    ======================================================================= 
+     */
 @media (min-width: 900px) and (max-width: 1200px) {
-  .grid-2-column {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .school-image {
-    max-width: 570px;
-  }
   section h2 {
     font-size: 10px;
     text-align: center;
@@ -335,6 +404,18 @@ footer a {
   section p {
     text-align: justify;
   }
+
+  /* ====== Abouts Section ====== */
+  .grid-2-column {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .school-image {
+    max-width: 570px;
+  }
+
+  /* ====== Communities Section ====== */
+  /* cards */
   .card-header {
     padding-top: 20px;
     grid-template-columns: 1fr;

@@ -3,29 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
     <link rel="shortcut icon" href="/images/logo.png" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS file -->
     <link rel="stylesheet" href="src/styles.css" />
     <title>Travel Project</title>
   </head>
   <body>
+    <!-- 
+    =======================================================================
+    Header
+    ======================================================================= 
+    -->
     <header>
       <h3>.TRAVEL.</h3>
       <h1>Welcome to Port McNeill</h1>
       <h2>Gateway to the Broughton Archipelago</h2>
+
       <a class="more-link" href="#more">LEARN MORE</a>
     </header>
     <main>
+      <!-- 
+    =======================================================================
+    About Port McNeill
+    ======================================================================= 
+    -->
       <section>
         <div id="more" class="grid grid-2-column">
           <div>
-            <img class="school-image" src="../images/school.jpg" alt="" />
+            <img
+              class="school-image"
+              src="../images/school.jpg"
+              alt="Port McNeill school"
+            />
           </div>
+
           <div>
             <h2>WHY PORT MCNEILL?</h2>
             <h3>Gateway to the Broughton Archipelago</h3>
@@ -44,13 +63,22 @@
           </div>
         </div>
       </section>
+
+      <!-- 
+    =======================================================================
+    Communities section
+    ======================================================================= 
+    -->
       <section class="communities">
         <h2 class="text-center">COMMUNITIES</h2>
         <h3 class="text-center">Visit Nearby Communities</h3>
         <div class="grid grid-3-column">
+          <!-- ====================Telegraph Cove======================= -->
           <div class="card">
             <div class="card-header">
-              <img src="../images/telegraph1.jpg" alt="" />
+              <!-- image -->
+              <img src="../images/telegraph1.jpg" alt="Telegraph Cove" />
+              <!--google map -->
               <iframe
                 class="embed"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10140.75527184963!2d-126.842550734451!3d50.549258530362685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5463724c0c738519%3A0x7e74b9510f4e7d49!2sTelegraph%20Cove%2C%20BC%20V0N%203J0!5e0!3m2!1sen!2sca!4v1715563954290!5m2!1sen!2sca"
@@ -60,6 +88,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
             <div class="card-body">
               <h4>Telegraph Cove</h4>
               <p>
@@ -74,6 +103,7 @@
                 with breathtaking beauty everywhere you turn.
               </p>
             </div>
+
             <div class="card-footer">
               <a
                 class="btn"
@@ -83,9 +113,13 @@
               >
             </div>
           </div>
+
+          <!-- ====================Port Alice======================= -->
           <div class="card">
             <div class="card-header">
-              <img src="../images/Alice.jpg" alt="" />
+              <!--image -->
+              <img src="../images/Alice.jpg" alt="Port Alice" />
+              <!--google map -->
               <iframe
                 class="embed"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48380.86091123291!2d-127.53131937999032!3d50.40932059127262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5463921ebd5e45db%3A0x2b4f90ce41e5cb2d!2sPort%20Alice%2C%20BC!5e0!3m2!1sen!2sca!4v1715563507195!5m2!1sen!2sca"
@@ -95,6 +129,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
             <div class="card-body">
               <h4>Port Alice</h4>
               <p>
@@ -108,15 +143,19 @@
                 leads to the magnificent Bear Falls.
               </p>
             </div>
+
             <div class="card-footer">
               <a class="btn" href="https://portalice.ca/" target="_blank"
                 >LEARN MORE</a
               >
             </div>
           </div>
+          <!-- ====================Port Hardy======================= -->
           <div class="card">
             <div class="card-header">
-              <img src="../images/hardy.jpg" alt="" />
+              <!--image -->
+              <img src="../images/hardy.jpg" alt="Port Hardy" />
+              <!--google map -->
               <iframe
                 class="embed"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40425.59353948642!2d-127.56462511515781!3d50.70881447618853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54647c2c1a49ed8b%3A0xb668c6b206d99d08!2sPort%20Hardy%2C%20BC!5e0!3m2!1sen!2sca!4v1715566153728!5m2!1sen!2sca"
@@ -126,6 +165,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
             <div class="card-body">
               <h4>Port Hardy</h4>
               <p>
@@ -140,6 +180,7 @@
                 years.
               </p>
             </div>
+
             <div class="card-footer">
               <a class="btn" href="https://porthardy.ca/" target="_blank"
                 >LEARN MORE</a
@@ -148,23 +189,36 @@
           </div>
         </div>
       </section>
+
+      <!-- 
+    =======================================================================
+    Gallery section
+    ======================================================================= 
+    -->
       <section class="gallery">
         <h2 class="text-center">GALLERY</h2>
         <h3 class="text-center">My photos from Port McNeill</h3>
         <div class="scroll-gallery">
-          <img src="../images/gallery/flower.jpg" alt="" />
-          <img src="../images/gallery/bear.jpg" alt="" />
-          <img src="../images/gallery/coral.jpg" alt="" />
-          <img src="../images/gallery/harbour.jpg" alt="" />
-          <img src="../images/gallery/deer.jpg" alt="" />
-          <img src="../images/gallery/town.jpg" alt="" />
-          <img src="../images/gallery/forest.jpg" alt="" />
-          <img src="../images/gallery/ferry.jpg" alt="" />
-          <img src="../images/gallery/plant.jpg" alt="" />
+          <img src="../images/gallery/flower.jpg" alt="flower" />
+          <img src="../images/gallery/bear.jpg" alt="bear" />
+          <img src="../images/gallery/coral.jpg" alt="coral" />
+          <img src="../images/gallery/harbour.jpg" alt="harbour" />
+          <img src="../images/gallery/deer.jpg" alt="deer" />
+          <img src="../images/gallery/town.jpg" alt="town" />
+          <img src="../images/gallery/forest.jpg" alt="forest" />
+          <img src="../images/gallery/ferry.jpg" alt="ferry" />
+          <img src="../images/gallery/plant.jpg" alt="plant" />
         </div>
       </section>
     </main>
+
+    <!-- 
+    =======================================================================
+    Footer
+    ======================================================================= 
+    -->
     <footer>
+      <!-- links -->
       <div class="grid grid-3-column-1-narrow footer-container">
         <div>
           <h3>About Port McNeill</h3>
@@ -191,6 +245,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- about me -->
         <div>
           <h3>About me</h3>
           <p>
@@ -199,6 +255,8 @@
             SheCodes Responsive to develop my coding skills.
           </p>
         </div>
+
+        <!-- about website -->
         <div>
           <h3>About this website</h3>
           <p>
